@@ -20,16 +20,24 @@
         <div class="container mt-5 mb-5">
             <div class="d-flex justify-content-center row">
                 <div class="d-flex flex-column col-md-8">
-                    <div>
-                        <label for="">Positive Sentiments : {{ data.positive }}</label>
-                    </div>
-                    <div>
-                        <label for="">Negative Sentiments : {{ data.negative }}</label>
-                    </div>
-                    <div>
+
+                    <div class="sentiment-card">
+                        <h2>Sentiment Overview</h2>
+
+                        <div class="sentiment-stats">
+                            <div class="stat-pill positive">
+                                Positive
+                                <span>{{ data.positive }}</span>
+                            </div>
+                            <div class="stat-pill negative">
+                                Negative
+                                <span>{{ data.negative }}</span>
+                            </div>
+                        </div>
+
                         <form method="post">
-                          <textarea name="text"></textarea>
-                          <input type="submit">
+                          <textarea name="text" placeholder="Write your review here..."></textarea>
+                          <input type="submit" value="Submit">
                         </form>
                     </div>
 
