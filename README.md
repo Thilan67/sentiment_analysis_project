@@ -1,4 +1,4 @@
-# sentiment_analysis_project
+## Sentiment analysis project
 This project is a Sentiment Analysis application designed to classify user comments as either positive (good) or negative (bad).
 
 The workflow includes:
